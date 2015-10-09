@@ -1,5 +1,5 @@
 # Shopper Approved Reviews Page
-Generates review page for shopper approved reviews from api.  You need a valid shopper approved account with active reviews.  Visit advanced tools>API in your shopper approved account and enter your name in the API section to get access.  Within  this you will find your SITEID which you will need for this project.
+Generates review page for shopper approved reviews from the Shopper Approved API.  You need a valid shopper approved account with active reviews.  Visit advanced tools>API in your shopper approved account and enter your name in the API section to get access.  Within  this you will find your SITEID which you will need for this project.
 
 <strong>Important:</strong> Plese follow directions below for installation.
 
