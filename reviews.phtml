@@ -1,0 +1,28 @@
+<div class="blog-ratings-wrapper">
+<br>
+<?php
+	$date = date("Y-m-d");
+  $reviews = simplexml_load_file("https://www.shopperapproved.com/api/xml/reviews/?siteid=16222&token=j6ZQGKY7C0m25sT&from=2014-01-01&to=$date&sort=newest&page=0");
+	foreach($reviews->children() as $review) { 
+			$review_name = $review->name;
+			$overall = $review->Overall;
+		  $ratings_percent = $overall/5*100;
+      if (isset($review->textcomments) and strlen($review->textcomments) > 7) {
+				echo "<div class='sa-review-wrapper'>";
+				echo "<div class='shopper_approved_author'>" . $review_name . "</div>";
+		    echo "<strong>Review Date:</strong> " . $review->displaydate . "<br>";
+				echo "<div class='sa-comments'>" . htmlspecialchars(stripslashes($review->textcomments)) . "</div>";
+			  echo "<strong>Overall Score:</strong> " . $overall . "<br>";
+				echo "<div class='ratings-outer'><div class='ratings-inner' style='width: $ratings_percent%'></div></div>";
+		    echo "<a href='$review->fullurl'>See the Full Review at Shopper Approved</a>" . "<br>";
+			  echo "</div>";
+				echo "<br>";
+			}
+		}
+?>
+</div>
+
+<?php 
+ini_set('default_socket_timeout', 3);
+echo file_get_contents('https://www.shopperapproved.com/feeds/schema.php/?siteid=16222&token=j6ZQGKY7C0m25sT');
+?>
