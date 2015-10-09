@@ -1,7 +1,7 @@
 # shopperapproved-reviews-page
 Generates review page for shopper approved reviews from api
 
-1. Create a cms page for your reviews and this to your CMS page content:
+1.) Create a cms page for your reviews and this to your CMS page content:
 
 ```html
 <h2>My Site is Shopper Approved</h2>
@@ -9,4 +9,12 @@ Generates review page for shopper approved reviews from api
 {{block type="core/template" template="customer_reviews/reviews.phtml"}}
 ```
 
-2. You must insert your SITEID from shopper approved into the reviews.phtml in two places where it says MYSITEID
+2.) You must insert your SITEID from shopper approved into the reviews.phtml in two places where it says YOURSITEID
+
+```php
+$reviews = simplexml_load_file("https://www.shopperapproved.com/api/xml/reviews/?siteid=YOURSITEID&token=j6ZQGKY7C0m25sT&from=2014-01-01&to=$date&sort=newest&page=0");
+```
+and
+```php
+echo file_get_contents('https://www.shopperapproved.com/feeds/schema.php/?siteid=YOURSITEID&token=j6ZQGKY7C0m25sT');
+```
