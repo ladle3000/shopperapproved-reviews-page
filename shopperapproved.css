@@ -1,0 +1,33 @@
+/*
+Shopper Approved
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+.sa-review-wrapper {
+  border: solid 1px #E2E6E6;
+  padding: 10px;
+	margin-right: 5px;	  
+}
+
+.shopper_approved_author {
+	color: #FFAC41;
+	font-weight: 600;
+}
+
+.sa-comments {
+    padding: 5px 0;
+}
+
+/*Star Ratings for Reviews Page - Shopper Approved*/
+.ratings-outer {
+	display: block;
+	width: 65px;
+	height: 13px;
+	background: url(../images/star-rating-sprite.png) 0 0;
+}
+
+.ratings-inner {
+	display: block;
+	height: 13px;
+	background: url(../images/star-rating-sprite.png) 0 -13px;
+}
