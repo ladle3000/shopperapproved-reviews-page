@@ -2,7 +2,7 @@
 <br>
 <?php
 	$date = date("Y-m-d");
-  $reviews = simplexml_load_file("https://www.shopperapproved.com/api/xml/reviews/?siteid=16222&token=j6ZQGKY7C0m25sT&from=2014-01-01&to=$date&sort=newest&page=0");
+  $reviews = simplexml_load_file("https://www.shopperapproved.com/api/xml/reviews/?siteid=YOURSITEID&token=j6ZQGKY7C0m25sT&from=2014-01-01&to=$date&sort=newest&page=0");
 	foreach($reviews->children() as $review) { 
 			$review_name = $review->name;
 			$overall = $review->Overall;
@@ -24,5 +24,5 @@
 
 <?php 
 ini_set('default_socket_timeout', 3);
-echo file_get_contents('https://www.shopperapproved.com/feeds/schema.php/?siteid=16222&token=j6ZQGKY7C0m25sT');
+echo file_get_contents('https://www.shopperapproved.com/feeds/schema.php/?siteid=YOURSITEID&token=j6ZQGKY7C0m25sT');
 ?>
