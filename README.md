@@ -1,8 +1,8 @@
 # Shopper Approved Reviews Page
 #### Also adds schema for overall star ratings for your results in google etc.
-Generates review page for shopper approved reviews from the Shopper Approved API.  You need a valid shopper approved account with active reviews.  Visit advanced tools>API in your shopper approved account and enter your name in the API section to get access.  Within  this you will find your SITEID which you will need for this project.
+Generates review page for shopper approved reviews from the Shopper Approved API.  You need a valid shopper approved account with active reviews.  Visit advanced tools>API in your shopper approved account and enter your name in the API section to get access.  Within this you will find your SITEID which you will need for this project.
 
-<strong>Important:</strong> Plese follow directions below for installation.
+<strong>Important:</strong> Please follow directions below for installation.
 
 1.) Create a cms page for your reviews and this to your CMS page content:
 
