@@ -1,7 +1,7 @@
 # shopperapproved-reviews-page
 Generates review page for shopper approved reviews from api
 
-1. Create a cms page for your reviews and call this block with the following within the CMS page:
+1. Create a cms page for your reviews and this to your CMS page content:
 
 ```html
 <h2>My Site is Shopper Approved</h2>
