@@ -1,4 +1,4 @@
-This is probably completely irrelevant since approx 2020 since shopper approved now can do this out of the box.
+<span style="font-color:red">This is probably completely irrelevant since approx 2020 since shopper approved now can do this out of the box.</span>
 
 # Shopper Approved Reviews Page for Magento
 #### Also adds schema for overall star ratings for your results in google etc.
