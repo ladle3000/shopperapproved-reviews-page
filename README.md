@@ -1,3 +1,5 @@
+This is probably completely irrelevant since approx 2020 since shopper approved now can do this out of the box.
+
 # Shopper Approved Reviews Page for Magento
 #### Also adds schema for overall star ratings for your results in google etc.
 Generates review page for shopper approved reviews from the Shopper Approved API.  You need a valid shopper approved account with active reviews.  Visit advanced tools>API in your shopper approved account and enter your name in the API section to get access.  Within this you will find your SITEID which you will need for this project.
